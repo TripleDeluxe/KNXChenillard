@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        meta(name="charset" content="utf-8")
+        title Panneau de contrôle KNX
+        meta(name="author" content="Thomas Guérin")
+        style
+            include ../public/css/style.css
+    body
+        h1 Panneau de contrôle KNX
+        p Connexion KNX : #{connectionState}
+        p État du chenillard : #{chenillardState}
+        button(class="controlButton" type="button" onclick="sendControl(0)") Démarrer le chenillard
+        button(class="controlButton" type="button" onclick="sendControl(1)") Arrêter le chenillard
+        button(class="controlButton" type="button" onclick="sendControl(2)") Inverser le chenillard
+        br
+
+        div(class="ledControl" id="ledControl0")
+            button(class="ledButton down" id="ledButton0" type="button" onclick="switchLedOnOff(0)")
+            div(class="ledState on" id="ledState0")
+        div(class="ledControl" id="ledControl1")
+            button(class="ledButton down" id="ledButton1" type="button" onclick="switchLedOnOff(1)")
+            div(class="ledState on" id="ledState1")
+        div(class="ledControl" id="ledControl2")
+            button(class="ledButton down" id="ledButton2" type="button" onclick="switchLedOnOff(2)")
+            div(class="ledState on" id="ledState2")
+        div(class="ledControl" id="ledControl3")
+            button(class="ledButton down" id="ledButton3" type="button" onclick="switchLedOnOff(3)")
+            div(class="ledState on" id="ledState3")
+        div(id="chenillardSpeedSlider")
+            label(for="chenillardSpeedSlider") Vitesse du chenillard : 
+            input(type="range" name="chenillardSpeedSlider" step="0.1")
+
+        block scripts
+            script(src="/socket.io/socket.io.js")
+            script(src="/js/client.js")

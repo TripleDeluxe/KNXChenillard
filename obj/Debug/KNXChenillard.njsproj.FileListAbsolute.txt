@@ -1,0 +1,3 @@
+C:\Users\IBM_ADMIN\source\repos\KNXChenillard\KNXChenillard\obj\Debug\KNXChenillard.njsprojAssemblyReference.cache
+C:\Users\IBM_ADMIN\source\repos\KNXChenillard\KNXChenillard\obj\Debug\KNXChenillard.njsproj.CoreCompileInputs.cache
+C:\Users\IBM_ADMIN\source\repos\KNXChenillard\KNXChenillard\bin\Microsoft.NodejsTools.WebRole.dll

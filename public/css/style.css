@@ -1,0 +1,47 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+
+button{
+    margin:auto;
+    display:inline-block;
+}
+
+#chenillardSpeedSlider{
+    display:block;
+}
+
+.ledButton {
+    height: 49%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ledState{
+    vertical-align: middle;
+    height: 49%;
+    background-size: auto;
+}
+
+.on {
+    background-image: url("../img/onIcon.png");
+}
+
+.off {
+    background-image: url("../img/offIcon.png");
+}
+
+.up{
+    background-image: url("../img/ledIconUp.png");
+}
+
+.down{
+    background-image: url("../img/ledIconDown.png");
+}
+
+.ledControl{
+    display: inline-block;
+    height: 450px;
+    width: 225px;
+}
